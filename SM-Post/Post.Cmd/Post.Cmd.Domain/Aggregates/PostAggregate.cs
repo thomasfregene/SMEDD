@@ -15,7 +15,7 @@ namespace Post.Cmd.Domain.Aggregates
         private string _author;
         private readonly Dictionary<Guid, Tuple<string, string>> _comments = new();
 
-        private bool Active
+        public bool Active
         {
             get => _active; set => _active = value;
         }
